@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple interest calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div class="container">
+        <h1>Simple Interest Calculator</h1>
+        <div class="forForm">
+        <label for="principal">Amount<input type="number"  id="principal"></label>  <br/>
+        <label for="rate">Interest Rate<input type="range" min="1" max="100" value="50"  id="rate" onchange="SliderValue()"></label> <span id="displayVal">10.25%</span><br/>
+        <label for="years">No. of Years <input type="number"  id="years"></label>  <br/>
+        <button onclick="compute()">Compute Interest</button>
+        <p id="result"></p>
+    </div>
+    <p>&copy;Khemmie Ray</p>
+    </div>
+    </body>
+</html>
